@@ -1,0 +1,10 @@
+<div class="loader-wrapper" *ngIf="show()">
+  <div class="loader">
+    <div>
+      <img src="assets/lg.shopping-cart-loader-icon.gif"/>
+      <span class="loading-message">{{message()}}</span>
+    </div>
+    <div *ngIf="description()"><span class="font-italic small">{{description()}}</span></div>
+  </div>
+  
+</div>

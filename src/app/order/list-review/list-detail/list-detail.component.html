@@ -1,0 +1,9 @@
+<li [class.unavailable]="!item.available">
+  <div class="item-wrapper row">
+    <div class="col-md-8"><strong>{{item.item.name}}</strong></div>
+    <div class="col-md-2" *ngIf="item.available"><input type="number" class="form-control form-control-sm" [(ngModel)]="item.qty"></div>
+    <div class="col-md-2" *ngIf="item.available"><button class="btn btn-default btn-sm" (click)='item.deleted = 1'>Remove</button></div>
+    <div class="col-md-4" *ngIf="!item.available"><span class="font-italic">This item is not currently available</span></div>
+  </div>
+  
+</li>

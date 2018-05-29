@@ -1,0 +1,18 @@
+<div id="zip-search" class="mx-auto d-block border rounded">
+  
+  <div class="w-75 mx-auto text-center">
+    <h1>Enter a zip code<br/>
+    to find your school</h1>
+  </div>
+  
+  <form #zipForm="ngForm" (ngSubmit)="onZipSearch(zipForm.value)" class="d-inline-block mx-auto">
+    <div class="form-row">
+      <div class="col-auto">
+        <input class="form-control form-control-sm" name="zip" id="zip" placeholder="Enter Zip Code" ngModel/>
+      </div>
+      <div class="col-auto">
+        <button class="btn-sm btn btn-primary" type="submit">Search</button>
+      </div>
+    </div>
+  </form>
+</div>

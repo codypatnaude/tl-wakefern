@@ -1,0 +1,25 @@
+#zip-search{
+    padding-top:30px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+div#schools-list {
+    margin-top: 30px;
+}
+
+li {
+    border-bottom: 1px solid #000;
+    padding: 10px 0px;
+}
+
+li h2{
+    margin-bottom: 0;
+}
+
+li:last-child{
+    border-bottom: none
+}

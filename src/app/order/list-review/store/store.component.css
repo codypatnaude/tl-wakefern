@@ -1,0 +1,41 @@
+.modal-wrapper{
+  padding: 10px 30px 30px 30px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.modal-close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: lightgray;
+  border-radius: 20px;
+  width: 25px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+
+table{
+  margin-top: 20px;
+  font-size: .8em;
+}
+
+thead{
+  border-top:none;
+}
+
+.table th{
+  border-top: none !important;
+}
+
+.table th, .table td{
+  padding: .5rem;
+}
+
+tr:hover{
+  cursor: pointer;
+}

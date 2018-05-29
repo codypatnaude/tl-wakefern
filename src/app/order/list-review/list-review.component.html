@@ -1,0 +1,37 @@
+<div id="supply-list" *ngIf="getList() && model.loggedIn && !hidelist" class="content">
+  <div class="border-bottom">
+    <h1>{{list.school.name}}</h1>
+  </div>
+
+  <div class="list-header row">
+    <div class="col-md-8">
+      <strong>{{list.list_name}}</strong><br/>
+      Grades: {{list.classroom.grade_level_string}}<br/>
+      {{list.description}}<br *ngIf="list.description"/>
+      <span class="font-italic">{{list.modified}}</span>
+    </div>
+    <div class="col-md-4">
+      <div class="store-info pull-right" *ngIf="getStore()">
+        <img src='assets/0318-tl-shoprite-app-shoprite-logo.jpg'/>
+        <span class="orange" *ngIf="isPreferredStore()">Purchase these items from your preferred store?</span><br/>
+        <strong>{{getStoreAddress().Name}}</strong><br/>
+        {{getStoreAddress().Address.AddressLine1}}, {{getStoreAddress().Address.City}} {{getStoreAddress().Address.Region}}, {{getStoreAddress().Address.PostalCode}}<br/>
+        <span class="orange"><a href="{{getStoreDirectionsURL()}}" target="_blank">Map</a> | <a class="clickable" (click)="openStoreModal()">Change Location</a></span>
+      </div>
+    </div>
+  </div>
+  <img class="d-block clickable" src="assets/0318-tl-shoprite-app-add-to-cart-button.png" (click)="addListToCart()"/>
+  
+  <div class="list-details" *ngIf="getList()">
+    <ul>
+      <li class="header">
+        <div class="row">
+          <div class="col-md-8">Item</div>
+          <div class="col-md-2">Qty</div>
+          <div class="col-md-2"></div>
+        </div>
+      </li>
+      <app-list-detail *ngFor="let item of filteredListDetails()" [item]="item"></app-list-detail>
+    </ul>
+  </div>
+</div>

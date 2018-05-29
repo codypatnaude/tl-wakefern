@@ -1,0 +1,14 @@
+.loader{
+  padding: 50px;
+  text-align: center;
+  color: gray;
+  font-size: 2em;
+}
+
+.small{
+  font-size: .5em;
+}
+
+.loader img{
+  height:2em;
+}

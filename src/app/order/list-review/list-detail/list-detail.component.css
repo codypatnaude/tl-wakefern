@@ -1,0 +1,9 @@
+.unavailable{
+  background-color: lightgray;
+  padding: 10px;
+}
+
+li{
+  border-bottom: 1px solid lightgray;
+  padding: 5px 0px;
+}

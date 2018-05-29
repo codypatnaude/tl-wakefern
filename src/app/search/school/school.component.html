@@ -1,0 +1,16 @@
+<div id="supply-lists" class="content" *ngIf="school">
+  <div class="page-title border-bottom">
+    <h2>{{school.School_Name}}</h2>
+  </div>
+  <div class="border-bottom">
+      <span class="font-italic">Please select your classroom</span>
+    </div>
+  <ul class="school-results" class="counter">
+    <li *ngFor="let list of lists">
+      <div class="list-content">
+        <a [routerLink]="['/search', 'list', list.id]"><h3>{{list.list_name}}</h3></a>
+        {{list.classroom.name}}
+      </div>
+    </li>
+  </ul>
+</div>

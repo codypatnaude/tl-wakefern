@@ -1,0 +1,62 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/dist-server
+/tmp
+/out-tsc
+/documentation
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+#KP : Ignore additional files
+.vscode/
+#/certificates/
+/KPSchoolFamilyBackUp/
+certificates/config.js.txt
+certificates/mwg_pfx.key
+certificates/mwg_pfx.pfx
+config-00-NOTWORKING.js
+config-00-NOTWORKING.js.txt
+config-00-WORKING.js
+config-00-WORKING.js.txt
+config-01-NOTWORKING.js
+config-02-Staging-WORKING.js.txt
+server/routes-00-ServerVersion-WORKING.js.txt
+server/routes-01-DebugComments-WORKING.js.txt
+server/routes-02-MWGTokenUpgradeAPIs-WORKING.js.txt

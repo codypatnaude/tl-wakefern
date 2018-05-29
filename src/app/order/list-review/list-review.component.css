@@ -1,0 +1,22 @@
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0px;
+}
+
+/*li.header{
+    font-weight: bold;
+    color: lightgray;
+}*/
+
+.store-info{
+    font-size: .8em;
+}
+.store-info img{
+    display: block;
+
+}

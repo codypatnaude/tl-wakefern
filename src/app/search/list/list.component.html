@@ -1,0 +1,21 @@
+<div id="supply-list" *ngIf="list" class="content">
+  <div class="border-bottom">
+    <h2>{{list.school.name}}</h2>
+  </div>
+  <div class="list-header pb-2 border-bottom">
+    <div class="float-right">
+      <a [routerLink]="['/order', list.id]"><img src="assets/0318-tl-shoprite-app-shoprite-button.png"/></a>
+    </div>
+    <div class="list-name"><h3>{{list.list_name}}</h3></div>
+    <div>Grade: {{list.classroom.grade_level_string}}</div>
+    <div>{{list.classroom.name}}</div>
+  </div>
+  <div class="list-details">
+    <ul>
+      <li *ngFor="let item of list.list_details">
+        <div class="item-qty">{{item.qty}}</div>
+        {{item.item.name}}
+      </li>
+    </ul>
+  </div>
+</div>
